@@ -6,4 +6,9 @@ class App < Sinatra::Base
     enable :Sessions
     set :session_secret, "learnco"
   end
+
+  get '/' do
+    erb :index
+  end
+  
 end
